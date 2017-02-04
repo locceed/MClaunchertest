@@ -9,5 +9,6 @@
     <Grid>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="672"/>
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="172,283,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="168" Margin="10,115,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="672"/>
     </Grid>
 </Window>

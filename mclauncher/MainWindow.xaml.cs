@@ -67,10 +67,16 @@ namespace mclauncher
             }
             return a1;
         }
-        private void button_Click(object sender, RoutedEventArgs e)
+        public void download()
         {
             WebClient w1 = new WebClient();
             w1.DownloadFile("http://bmclapi2.bangbang93.com/version/" + "/" + listBox.SelectedItems[0] + "/cilent", Environment.CurrentDirectory + "\\" + listBox.SelectedItems[0].ToString() + ".json");
+        }
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            readjson r = new readjson();
+            int a = r.analysis("", "[", "]");
+            textBox.Text = a.ToString();
         }
     }
 }
